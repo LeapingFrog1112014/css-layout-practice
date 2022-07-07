@@ -1,0 +1,26 @@
+.form_layout {
+    display: box;
+    width: 20%;
+    margin: 0 auto;
+}
+.form_layout_c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.form_layout_r {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+
+}
+
+#add_user {
+    border: 1px solid black;
+}

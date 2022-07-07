@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Add user</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <form action="/form-handling-url" method="post">
+            <fieldset>
+                <legend id="add_user">Add user</legend>
+
+                <div class="form_layout">
+                    <div class="form_layout_c">
+                        <label class="form_label" for="firstName">First name</label>
+                        <input type="text" id="firstName" name="first_name">
+                    </div>
+
+                    <div class="form_layout_c">
+                        <label class="form_label" for="lastName">Last name</label>
+                        <input type="text" id="lastName" name="last_name">
+                    </div>
+
+                    <div class="form_layout_c">
+                        <label class="form_label" for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="form_layout_r">
+                        <div class="form_layout_c" >
+                        <label class="form_label" for="role">Role</label>
+                        <select id="role" name="user_role_name">
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="guest">Guest</option>
+                        </select>
+                        </div>
+                        <div class="form_layout_c" >
+                        <label class="form_label" for="current-date">Current date</label>
+                        <input type="date" id="current-date" name="current-date">
+                        </div>
+                    </div>
+
+                    <div class="form_layout_c">
+                        <p>Choose your favorite language:</p>
+                        <div class="form_layout_r">
+                        <input type="radio" id="html" name="favorite_language">
+                        <label for="html">HTML</label>
+                        <input type="radio" id="css" name="favorite_language">
+                        <label for="css">CSS</label>
+                        <input type="radio" id="javascript" name="favorite_language">
+                        <label for="javascript">JavaScript</label>
+                    </div>
+                    </div>
+
+                    <div class="form_layout_c">
+                        <label class="form_label" for="comments">Comments</label>
+                        <textarea id="comments" name="user_comments"></textarea>
+                    </div>
+
+
+                <div class="form_layout_r">
+                    <div>
+                        <input type="checkbox" id="check-newsletter" name="check-newsletter">
+                        <label for="check-newsletter">Sign up for news</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="agree-tandc" name="agree-tandc">
+                        <label for="agree-tandc">Agree to terms</label>
+                    </div>
+                </div>
+
+                    <div class="form_layout_c">
+                        <button  type="submit" id="submit">Submit</button>
+                    </div>
+                </div>
+
+            </fieldset>
+
+        </form>
+    </body>
+</html>
